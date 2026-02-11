@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <audio id="bg-music" loop>
+        <source src="valentine_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="music-control">
+        <button id="music-btn" class="btn-music">🎵 Play Music</button>
+    </div>
+
+    <div class="container">
+        <div id="step-1" class="step active">
+            <h1>Duduuu,<br>will you be my Valentine? 💖💞</h1>
+            <p class="subtitle">Choose wisely. (The "No" button is... shy.)</p>
+            <div class="buttons">
+                <button id="no-btn" class="btn no">No 🥺</button>
+                <button id="yes-btn" class="btn yes">YES</button>
+            </div>
+        </div>
+
+        <div id="success-content" class="success-content hidden">
+            <h1>YAY!!! 💖</h1>
+            <p class="subtitle">Best decision ever �</p>
+            <div class="image-container">
+                <img src="us.jpg" alt="Happy Valentine"
+                    style="max-width: 100%; max-height: 400px; border-radius: 10px; object-fit: cover;">
+                <p style="margin-top: 10px; font-size: 1.2rem; color: #ff4d6d;">I love you ❤️</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
